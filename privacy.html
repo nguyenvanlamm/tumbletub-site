@@ -9,20 +9,24 @@
 <link rel="canonical" href="https://nguyenvanlamm.github.io/tumbletub-site/privacy.html">
 <link rel="icon" type="image/png" sizes="40x40" href="img/favicon-40.png">
 <link rel="apple-touch-icon" sizes="180x180" href="img/icon-180.png">
+<meta name="color-scheme" content="light dark">
+<link rel="preload" href="fonts/jost_medium.woff2" as="font" type="font/woff2" crossorigin>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Tumbletub">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="Tumbletub Privacy Policy">
 <meta property="og:description" content="Tumbletub privacy policy: no account, no ads, no analytics, no tracking. Progress and purchases stay on your device; the App Store handles payments.">
 <meta property="og:url" content="https://nguyenvanlamm.github.io/tumbletub-site/privacy.html">
-<meta property="og:image" content="https://nguyenvanlamm.github.io/tumbletub-site/img/icon-1024.png">
-<meta property="og:image:width" content="1024">
-<meta property="og:image:height" content="1024">
-<meta property="og:image:alt" content="Tumbletub app icon: a rubber duck pushed by a fizz ball above bath water">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://nguyenvanlamm.github.io/tumbletub-site/img/share-card.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tumbletub: Plan the fizz. Wait for the plop. 96 levels, the first 24 free. Two iPhone screens of Bathtub level 1-23, before and during the fizz.">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Tumbletub Privacy Policy">
 <meta name="twitter:description" content="Tumbletub privacy policy: no account, no ads, no analytics, no tracking. Progress and purchases stay on your device; the App Store handles payments.">
-<meta name="twitter:image" content="https://nguyenvanlamm.github.io/tumbletub-site/img/icon-1024.png">
+<meta name="twitter:image" content="https://nguyenvanlamm.github.io/tumbletub-site/img/share-card.png">
+<meta name="twitter:image:alt" content="Tumbletub: Plan the fizz. Wait for the plop. 96 levels, the first 24 free. Two iPhone screens of Bathtub level 1-23, before and during the fizz.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -44,18 +48,52 @@
 }
 </script>
 <style>
-  :root { --bg: #F2E8D2; --ink: #2A221B; --muted: #64543F; --accent: #A8441F; --line: #E2D3B2; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #221B15; --ink: #F2E8D2; --muted: #C6B79F; --accent: #E3B25A; --line: #43362A; } }
-  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, sans-serif; }
-  main { max-width: 640px; margin: 0 auto; padding: 48px 20px 64px; }
-  h1 { font-size: 32px; line-height: 1.2; margin: 0 0 8px; }
-  h2 { font-size: 21px; line-height: 1.3; margin: 32px 0 8px; }
-  .muted { color: var(--muted); } a { color: var(--accent); }
-  hr { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
+  @font-face { font-family: "Fraunces"; src: url("fonts/fraunces_bold.woff2") format("woff2"), url("fonts/fraunces_bold.ttf") format("truetype"); font-weight: 700; font-style: normal; font-display: swap; }
+  @font-face { font-family: "Jost"; src: url("fonts/jost_medium.woff2") format("woff2"), url("fonts/jost_medium.ttf") format("truetype"); font-weight: 500; font-style: normal; font-display: swap; }
+  @font-face { font-family: "Jost"; src: url("fonts/jost_semibold.woff2") format("woff2"), url("fonts/jost_semibold.ttf") format("truetype"); font-weight: 600; font-style: normal; font-display: swap; }
+  :root { --bg: #F2E8D2; --grout: #E6D9BC; --card: #FBF5E8; --card-line: #E2D3B2; --ink: #2A221B; --muted: #64543F; --avocado: #8B9447; --avocado-ink: #57601F; --teak-dark: #5A3A20; --gold: #DDA640; --orange: #C8562B; --orange-ink: #A8441F; --shadow: 0 10px 30px rgba(74, 52, 30, .18); }
+  @media (prefers-color-scheme: dark) { :root { --bg: #221B15; --grout: #2C231B; --card: #2E251D; --card-line: #43362A; --ink: #F2E8D2; --muted: #C6B79F; --avocado-ink: #B9C26C; --teak-dark: #8A5A33; --gold: #E3B25A; --orange: #D8663A; --orange-ink: #EE8A5E; --shadow: 0 10px 30px rgba(0, 0, 0, .45); } }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background-color: var(--bg); background-image: linear-gradient(var(--grout) 1px, transparent 1px), linear-gradient(90deg, var(--grout) 1px, transparent 1px); background-size: 52px 52px; color: var(--ink); font: 500 17px/1.6 "Jost", system-ui, -apple-system, "Segoe UI", sans-serif; overflow-wrap: break-word; }
+  a { color: var(--orange-ink); text-underline-offset: 3px; }
+  a:hover { color: var(--orange); }
+  h1, h2 { font-family: "Fraunces", Georgia, "Times New Roman", serif; font-weight: 700; }
+  .band { height: 10px; background: var(--avocado); border-bottom: 4px solid var(--teak-dark); }
+  .top { max-width: 720px; margin: 0 auto; padding: 20px 16px 0; }
+  .brand { display: inline-flex; align-items: center; gap: 12px; min-height: 48px; padding-right: 8px; color: var(--ink); text-decoration: none; }
+  .brand:hover { color: var(--ink); }
+  .brand img { width: 44px; height: 44px; border-radius: 22%; box-shadow: var(--shadow); }
+  .brand span { font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: 24px; }
+  main { max-width: 720px; margin: 16px auto 0; padding: 0 16px; }
+  .card { background: var(--card); border: 1px solid var(--card-line); border-radius: 22px; padding: 28px 20px; box-shadow: var(--shadow); }
+  h1 { font-size: clamp(30px, 8vw, 38px); line-height: 1.15; margin: 0 0 8px; }
+  h2 { font-size: 22px; line-height: 1.25; margin: 32px 0 8px; }
+  .muted { color: var(--muted); }
+  ul { padding-left: 1.2em; }
+  li + li { margin-top: 4px; }
+  .steps { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 14px; }
+  .steps li { display: grid; grid-template-columns: 36px 1fr; gap: 12px; align-items: start; margin: 0; }
+  .ball { width: 36px; height: 36px; border-radius: 50%; background: radial-gradient(circle at 34% 30%, #E88A5E 0 18%, var(--orange) 46%, #8F3A19 100%); color: #FBF5E8; font: 700 17px/36px "Fraunces", Georgia, serif; text-align: center; box-shadow: 0 0 0 3px var(--card), 0 0 0 5px var(--gold); }
+  .steps strong, .helpers strong { font-weight: 600; }
+  .steps p { margin: 4px 0 0; }
+  .drop { white-space: nowrap; }
+  .dry-mark { display: inline-block; width: 1.3em; height: 1.3em; vertical-align: -.3em; margin-right: .2em; }
+  .mail { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; }
+  footer { max-width: 720px; margin: 0 auto; padding: 32px 16px 40px; text-align: center; color: var(--muted); font-size: 15px; }
+  footer nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 4px 12px; font-weight: 600; font-size: 17px; }
+  footer nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; }
+  footer p { margin: 6px 0 0; }
+  @media (min-width: 720px) { .top { padding-top: 32px; } .card { padding: 36px 40px; } }
 </style>
 </head>
 <body>
+<div class="band" aria-hidden="true"></div>
+<header class="top">
+  <a class="brand" href="./" aria-label="Tumbletub home"><img src="img/icon-180.png" width="44" height="44" alt=""><span>Tumbletub</span></a>
+</header>
 <main>
+<div class="card">
   <h1>Privacy Policy</h1>
   <p class="muted">Tumbletub · last updated November 10, 2026</p>
 
@@ -86,8 +124,17 @@
   <h2>Changes</h2>
   <p>If this policy changes, the new version will be posted on this page with a new date.</p>
 
-  <hr>
-  <p class="muted">Questions: <a href="support.html">Tumbletub support</a>.</p>
+  <h2>Questions</h2>
+  <p>Write to us through <a class="mail" href="support.html">Tumbletub support</a>.</p>
+</div>
 </main>
+<footer>
+  <nav aria-label="Site">
+    <a href="./">Home</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="support.html">Support</a>
+  </nav>
+  <p>&copy; 2026 Tumbletub. Coming soon to the App Store for iPhone.</p>
+</footer>
 </body>
 </html>

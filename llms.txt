@@ -4,9 +4,9 @@
 
 Key facts:
 
-- Platform: iPhone only, portrait. Not released yet: there is no App Store link, rating or download count yet.
+- Platform: iPhone only, portrait. Not released yet: there is no App Store link, rating or download count yet. To hear about the launch, email lamnv260398@gmail.com (the site's "Email me at launch" link; no sign-up form or mailing list).
 - Content: four rooms of 24 levels each (96 levels): Bathtub, Laundry Room, Kitchen Sink, Garden Pool.
-- Price: free to download; the Bathtub and its 24 levels are free. Laundry Room, Kitchen Sink and Garden Pool are one-time in-app purchases at $1.99 each (US prices), or Whole House (all three) at $3.99 while you own no room yet. No subscriptions, no consumables; Restore Purchases is in Settings and the Shop.
+- Price: free to download; the Bathtub and its 24 levels are free. Laundry Room, Kitchen Sink and Garden Pool are one-time in-app purchases at $1.99 each (US prices), or Whole House (all 3 paid rooms, saving $1.98) at $3.99, offered only before you buy any room. No subscriptions, no consumables; Restore Purchases is in Settings and the Shop.
 - Helpers: Start over is always free. Rewind (undo the last Fizz!) and Extra Fizz (one more ball) are earned by clearing levels 6, 12, 18 and 24 of a room for the first time; they are never sold.
 - Privacy: no ads, no analytics, no tracking, no sign-in. Progress stays on the device and works offline.
 - Language: English.
