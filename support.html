@@ -9,20 +9,24 @@
 <link rel="canonical" href="https://nguyenvanlamm.github.io/tumbletub-site/support.html">
 <link rel="icon" type="image/png" sizes="40x40" href="img/favicon-40.png">
 <link rel="apple-touch-icon" sizes="180x180" href="img/icon-180.png">
+<meta name="color-scheme" content="light dark">
+<link rel="preload" href="fonts/jost_medium.woff2" as="font" type="font/woff2" crossorigin>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Tumbletub">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="Tumbletub Support">
 <meta property="og:description" content="Help with Tumbletub: contact, how to play, buying and restoring rooms, and how progress is saved.">
 <meta property="og:url" content="https://nguyenvanlamm.github.io/tumbletub-site/support.html">
-<meta property="og:image" content="https://nguyenvanlamm.github.io/tumbletub-site/img/icon-1024.png">
-<meta property="og:image:width" content="1024">
-<meta property="og:image:height" content="1024">
-<meta property="og:image:alt" content="Tumbletub app icon: a rubber duck pushed by a fizz ball above bath water">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://nguyenvanlamm.github.io/tumbletub-site/img/share-card.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tumbletub: Plan the fizz. Wait for the plop. 96 levels, the first 24 free. Two iPhone screens of Bathtub level 1-23, before and during the fizz.">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Tumbletub Support">
 <meta name="twitter:description" content="Help with Tumbletub: contact, how to play, buying and restoring rooms, and how progress is saved.">
-<meta name="twitter:image" content="https://nguyenvanlamm.github.io/tumbletub-site/img/icon-1024.png">
+<meta name="twitter:image" content="https://nguyenvanlamm.github.io/tumbletub-site/img/share-card.png">
+<meta name="twitter:image:alt" content="Tumbletub: Plan the fizz. Wait for the plop. 96 levels, the first 24 free. Two iPhone screens of Bathtub level 1-23, before and during the fizz.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -49,35 +53,87 @@
 }
 </script>
 <style>
-  :root { --bg: #F2E8D2; --ink: #2A221B; --muted: #64543F; --accent: #A8441F; --line: #E2D3B2; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #221B15; --ink: #F2E8D2; --muted: #C6B79F; --accent: #E3B25A; --line: #43362A; } }
-  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, sans-serif; }
-  main { max-width: 640px; margin: 0 auto; padding: 48px 20px 64px; }
-  h1 { font-size: 32px; line-height: 1.2; margin: 0 0 8px; }
-  h2 { font-size: 21px; line-height: 1.3; margin: 32px 0 8px; }
-  .muted { color: var(--muted); } a { color: var(--accent); }
-  hr { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
+  @font-face { font-family: "Fraunces"; src: url("fonts/fraunces_bold.woff2") format("woff2"), url("fonts/fraunces_bold.ttf") format("truetype"); font-weight: 700; font-style: normal; font-display: swap; }
+  @font-face { font-family: "Jost"; src: url("fonts/jost_medium.woff2") format("woff2"), url("fonts/jost_medium.ttf") format("truetype"); font-weight: 500; font-style: normal; font-display: swap; }
+  @font-face { font-family: "Jost"; src: url("fonts/jost_semibold.woff2") format("woff2"), url("fonts/jost_semibold.ttf") format("truetype"); font-weight: 600; font-style: normal; font-display: swap; }
+  :root { --bg: #F2E8D2; --grout: #E6D9BC; --card: #FBF5E8; --card-line: #E2D3B2; --ink: #2A221B; --muted: #64543F; --avocado: #8B9447; --avocado-ink: #57601F; --teak-dark: #5A3A20; --gold: #DDA640; --orange: #C8562B; --orange-ink: #A8441F; --shadow: 0 10px 30px rgba(74, 52, 30, .18); }
+  @media (prefers-color-scheme: dark) { :root { --bg: #221B15; --grout: #2C231B; --card: #2E251D; --card-line: #43362A; --ink: #F2E8D2; --muted: #C6B79F; --avocado-ink: #B9C26C; --teak-dark: #8A5A33; --gold: #E3B25A; --orange: #D8663A; --orange-ink: #EE8A5E; --shadow: 0 10px 30px rgba(0, 0, 0, .45); } }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background-color: var(--bg); background-image: linear-gradient(var(--grout) 1px, transparent 1px), linear-gradient(90deg, var(--grout) 1px, transparent 1px); background-size: 52px 52px; color: var(--ink); font: 500 17px/1.6 "Jost", system-ui, -apple-system, "Segoe UI", sans-serif; overflow-wrap: break-word; }
+  a { color: var(--orange-ink); text-underline-offset: 3px; }
+  a:hover { color: var(--orange); }
+  h1, h2 { font-family: "Fraunces", Georgia, "Times New Roman", serif; font-weight: 700; }
+  .band { height: 10px; background: var(--avocado); border-bottom: 4px solid var(--teak-dark); }
+  .top { max-width: 720px; margin: 0 auto; padding: 20px 16px 0; }
+  .brand { display: inline-flex; align-items: center; gap: 12px; min-height: 48px; padding-right: 8px; color: var(--ink); text-decoration: none; }
+  .brand:hover { color: var(--ink); }
+  .brand img { width: 44px; height: 44px; border-radius: 22%; box-shadow: var(--shadow); }
+  .brand span { font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: 24px; }
+  main { max-width: 720px; margin: 16px auto 0; padding: 0 16px; }
+  .card { background: var(--card); border: 1px solid var(--card-line); border-radius: 22px; padding: 28px 20px; box-shadow: var(--shadow); }
+  h1 { font-size: clamp(30px, 8vw, 38px); line-height: 1.15; margin: 0 0 8px; }
+  h2 { font-size: 22px; line-height: 1.25; margin: 32px 0 8px; }
+  .muted { color: var(--muted); }
+  ul { padding-left: 1.2em; }
+  li + li { margin-top: 4px; }
+  .steps { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 14px; }
+  .steps li { display: grid; grid-template-columns: 36px 1fr; gap: 12px; align-items: start; margin: 0; }
+  .ball { width: 36px; height: 36px; border-radius: 50%; background: radial-gradient(circle at 34% 30%, #E88A5E 0 18%, var(--orange) 46%, #8F3A19 100%); color: #FBF5E8; font: 700 17px/36px "Fraunces", Georgia, serif; text-align: center; box-shadow: 0 0 0 3px var(--card), 0 0 0 5px var(--gold); }
+  .steps strong, .helpers strong { font-weight: 600; }
+  .steps p { margin: 4px 0 0; }
+  .drop { white-space: nowrap; }
+  .dry-mark { display: inline-block; width: 1.3em; height: 1.3em; vertical-align: -.3em; margin-right: .2em; }
+  .mail { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; }
+  footer { max-width: 720px; margin: 0 auto; padding: 32px 16px 40px; text-align: center; color: var(--muted); font-size: 15px; }
+  footer nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 4px 12px; font-weight: 600; font-size: 17px; }
+  footer nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; }
+  footer p { margin: 6px 0 0; }
+  @media (min-width: 720px) { .top { padding-top: 32px; } .card { padding: 36px 40px; } }
 </style>
 </head>
 <body>
+<div class="band" aria-hidden="true"></div>
+<header class="top">
+  <a class="brand" href="./" aria-label="Tumbletub home"><img src="img/icon-180.png" width="44" height="44" alt=""><span>Tumbletub</span></a>
+</header>
 <main>
+<div class="card">
   <h1>Tumbletub Support</h1>
   <p class="muted">Plan the fizz. Wait for the plop.</p>
 
   <h2>Contact</h2>
-  <p>Write to <a href="mailto:lamnv260398@gmail.com">lamnv260398@gmail.com</a>. Please say which device you play on and, if it is about a level, its number.</p>
+  <p>Write to <a class="mail" href="mailto:lamnv260398@gmail.com">lamnv260398@gmail.com</a>. Please say which device you play on and, if it is about a level, its number.</p>
 
   <h2>How to play</h2>
-  <p>Tap a glowing ring on a bath toy to place a numbered fizz ball. Place one or more, then press <em>Fizz!</em> — the balls pop in number order, and the foam pushes everything nearby away from each ball. Get every toy into the water. Anything that lands on the floor loses the level, and a piece marked with a crossed-out drop must stay dry. <em>Start over</em> is always free. <em>Rewind</em> (undo the last Fizz!) and <em>Extra Fizz</em> (one more ball) are earned by clearing levels 6, 12, 18 and 24 of a room for the first time.</p>
+  <ol class="steps">
+    <li><span class="ball" aria-hidden="true">1</span><div><strong>Place.</strong><p>Tap a glowing ring on a bath toy to place a numbered fizz ball. Place one, or several.</p></div></li>
+    <li><span class="ball" aria-hidden="true">2</span><div><strong>Fizz!</strong><p>Press <em>Fizz!</em> The balls pop in number order, and the foam pushes everything nearby away from each ball.</p></div></li>
+    <li><span class="ball" aria-hidden="true">3</span><div><strong>Plop.</strong><p>Get every toy into the water. Anything that lands on the floor loses the level, and a piece marked with a <span class="drop"><svg class="dry-mark" viewBox="-9 -9 18 18" aria-hidden="true" focusable="false"><circle r="8" fill="#FBF7EE" stroke="#E2D3B2" stroke-width="1"/><path d="M0 -5 Q4 1 0 4 Q-4 1 0 -5 Z" fill="#3E8A86"/><path d="M-5 5 L5 -5" stroke="#B4521F" stroke-width="2" stroke-linecap="round"/></svg>crossed-out drop</span> must stay dry.</p></div></li>
+  </ol>
+  <p>Helpers:</p>
+  <ul class="helpers">
+    <li><strong>Start over</strong> is always free.</li>
+    <li><strong>Rewind</strong> undoes the last Fizz!</li>
+    <li><strong>Extra Fizz</strong> gives you one more ball.</li>
+    <li>Rewind and Extra Fizz are earned by clearing levels 6, 12, 18 and 24 of a room for the first time. They are never sold.</li>
+  </ul>
 
   <h2>Purchases</h2>
-  <p>The Bathtub and its 24 levels are free. The Laundry Room, Kitchen Sink and Garden Pool rooms (24 levels each) are one-time purchases (non-consumable): $1.99 each, or the Whole House for $3.99 while you own no room yet. The App Store shows prices in your currency. Bought something before, or on another device with the same store account? Open <em>Settings → Restore purchases</em> or <em>Shop → Restore purchases</em>.</p>
+  <p>The Bathtub and its 24 levels are free. The Laundry Room, Kitchen Sink and Garden Pool rooms (24 levels each) are one-time purchases (non-consumable): $1.99 each. The Whole House gets all 3 paid rooms for $3.99, saving $1.98, and is offered only before you buy any room. The App Store shows prices in your currency. Bought something before, or on another device with the same store account? Open <em>Settings → Restore purchases</em> or <em>Shop → Restore purchases</em>.</p>
 
   <h2>Progress</h2>
   <p>Progress is saved on the device only. It is not synced between devices, and it is removed if you delete the app.</p>
 
-  <hr>
-  <p class="muted"><a href="privacy.html">Privacy Policy</a></p>
+</div>
 </main>
+<footer>
+  <nav aria-label="Site">
+    <a href="./">Home</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="support.html">Support</a>
+  </nav>
+  <p>&copy; 2026 Tumbletub. Coming soon to the App Store for iPhone.</p>
+</footer>
 </body>
 </html>
