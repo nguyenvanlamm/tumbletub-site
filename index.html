@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tumbletub — a bath-toy physics puzzle for iPhone</title>
+<meta name="description" content="Tumbletub is a calm physics puzzle for iPhone: place numbered fizz balls on bath toys, press Fizz!, and let the foam push every toy into the water. No ads, no lives, no tracking.">
+<link rel="canonical" href="https://nguyenvanlamm.github.io/tumbletub-site/">
+<meta name="theme-color" content="#F2E8D2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#221B15" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/png" sizes="40x40" href="img/favicon-40.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/icon-180.png">
+<link rel="preload" href="fonts/fraunces_bold.ttf" as="font" type="font/ttf" crossorigin>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tumbletub">
+<meta property="og:title" content="Tumbletub — a bath-toy physics puzzle for iPhone">
+<meta property="og:description" content="Plan the fizz. Wait for the plop. Place numbered fizz balls on bath toys and let the foam push every toy into the water. Coming soon to the App Store.">
+<meta property="og:url" content="https://nguyenvanlamm.github.io/tumbletub-site/">
+<meta property="og:image" content="https://nguyenvanlamm.github.io/tumbletub-site/img/icon-1024.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="1024">
+<meta property="og:image:alt" content="Tumbletub app icon: a rubber duck pushed by a fizz ball above bath water">
+<meta name="twitter:card" content="summary">
+<style>
+  @font-face { font-family: "Fraunces"; src: url("fonts/fraunces_bold.ttf") format("truetype"); font-weight: 700; font-style: normal; font-display: swap; }
+  @font-face { font-family: "Jost"; src: url("fonts/jost_medium.ttf") format("truetype"); font-weight: 500; font-style: normal; font-display: swap; }
+  @font-face { font-family: "Jost"; src: url("fonts/jost_semibold.ttf") format("truetype"); font-weight: 600; font-style: normal; font-display: swap; }
+
+  :root {
+    --bg: #F2E8D2;
+    --grout: #E6D9BC;
+    --card: #FBF5E8;
+    --card-line: #E2D3B2;
+    --ink: #2A221B;
+    --muted: #64543F;
+    --avocado: #8B9447;
+    --avocado-ink: #57601F;
+    --teak: #7A4E2B;
+    --teak-dark: #5A3A20;
+    --gold: #DDA640;
+    --orange: #C8562B;
+    --orange-ink: #A8441F;
+    --water: #3E8A86;
+    --shadow: 0 10px 30px rgba(74, 52, 30, .18);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #221B15;
+      --grout: #2C231B;
+      --card: #2E251D;
+      --card-line: #43362A;
+      --ink: #F2E8D2;
+      --muted: #C6B79F;
+      --avocado: #8B9447;
+      --avocado-ink: #B9C26C;
+      --teak: #B07A4C;
+      --teak-dark: #8A5A33;
+      --gold: #E3B25A;
+      --orange: #D8663A;
+      --orange-ink: #EE8A5E;
+      --water: #4FA19C;
+      --shadow: 0 10px 30px rgba(0, 0, 0, .45);
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background-color: var(--bg);
+    background-image:
+      linear-gradient(var(--grout) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grout) 1px, transparent 1px);
+    background-size: 52px 52px;
+    color: var(--ink);
+    font: 500 17px/1.6 "Jost", system-ui, -apple-system, "Segoe UI", sans-serif;
+    overflow-wrap: break-word;
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: var(--orange-ink); text-underline-offset: 3px; }
+  a:hover { color: var(--orange); }
+  h1, h2, h3 { font-family: "Fraunces", Georgia, "Times New Roman", serif; font-weight: 700; line-height: 1.15; margin: 0; }
+
+  .band { height: 10px; background: var(--avocado); border-bottom: 4px solid var(--teak-dark); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+
+  /* Hero */
+  .hero { padding: 40px 0 24px; text-align: center; }
+  .brand { display: inline-flex; align-items: center; gap: 14px; margin-bottom: 22px; }
+  .brand img { border-radius: 22%; box-shadow: var(--shadow); }
+  .brand span { font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: 30px; letter-spacing: .01em; }
+  .kicker { margin: 0 0 10px; color: var(--avocado-ink); font-weight: 600; font-size: 14px; letter-spacing: .12em; text-transform: uppercase; }
+  .hero h1 { font-size: clamp(34px, 9vw, 56px); max-width: 14ch; margin: 0 auto; }
+  .pitch { max-width: 34em; margin: 16px auto 0; font-size: 18px; color: var(--muted); }
+  .soon {
+    display: inline-block; margin-top: 24px; padding: 10px 20px;
+    background: var(--gold); color: #2A221B; border-radius: 999px;
+    font-weight: 600; font-size: 16px; box-shadow: 0 3px 0 #A97A22;
+  }
+  .promises { list-style: none; padding: 0; margin: 20px auto 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px; font-size: 15px; color: var(--muted); }
+  .promises li::before { content: ""; display: inline-block; width: 8px; height: 8px; margin-right: 8px; border-radius: 50%; background: var(--avocado); vertical-align: middle; }
+
+  /* Screenshots */
+  .shots { display: flex; justify-content: center; gap: 14px; padding: 16px 0 8px; }
+  .shots figure { margin: 0; flex: 0 1 260px; min-width: 0; }
+  .phone { border: 6px solid var(--ink); border-radius: 30px; overflow: hidden; background: var(--ink); box-shadow: var(--shadow); }
+  .shots figcaption { margin-top: 10px; font-size: 14px; color: var(--muted); text-align: center; }
+
+  /* Sections */
+  section { padding: 40px 0 8px; }
+  .card { background: var(--card); border: 1px solid var(--card-line); border-radius: 22px; padding: 28px 20px; box-shadow: var(--shadow); max-width: 720px; margin: 0 auto; }
+  .card h2 { font-size: clamp(26px, 6.5vw, 34px); margin-bottom: 8px; }
+  .lede { margin: 0 0 20px; color: var(--muted); }
+
+  .steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 18px; }
+  .steps li { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: start; }
+  .ball {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: radial-gradient(circle at 34% 30%, #E88A5E 0 18%, var(--orange) 46%, #8F3A19 100%);
+    color: #FBF5E8; font: 700 20px/44px "Fraunces", Georgia, serif; text-align: center;
+    box-shadow: 0 0 0 3px var(--card), 0 0 0 5px var(--gold);
+  }
+  .steps h3 { font-size: 20px; margin: 2px 0 4px; }
+  .steps p { margin: 0; }
+  .note { margin: 22px 0 0; padding: 14px 16px; border-left: 4px solid var(--avocado); background: color-mix(in srgb, var(--avocado) 12%, transparent); border-radius: 0 12px 12px 0; }
+  .drop { white-space: nowrap; }
+
+  .fair { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 12px; }
+  .fair li { position: relative; padding-left: 30px; }
+  .fair li::before { content: ""; position: absolute; left: 0; top: 7px; width: 16px; height: 16px; border-radius: 50%; background: var(--water); box-shadow: inset -3px -3px 0 rgba(0,0,0,.18); }
+  .fair strong { font-weight: 600; }
+
+  .rooms { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+  .rooms li { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 12px 16px; border: 1px solid var(--card-line); border-radius: 14px; background: var(--bg); }
+  .rooms .name { font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: 18px; }
+  .rooms .levels { display: block; font-size: 14px; color: var(--muted); }
+  .rooms .price { font-weight: 600; white-space: nowrap; }
+  .rooms .free { border-color: var(--avocado); }
+  .rooms .free .price { color: var(--avocado-ink); }
+  .rooms .house { border: 2px solid var(--gold); }
+  .fine { margin: 16px 0 0; font-size: 15px; color: var(--muted); }
+
+  footer { padding: 48px 0 40px; text-align: center; font-size: 15px; color: var(--muted); }
+  footer nav { display: flex; justify-content: center; gap: 24px; margin-bottom: 10px; font-weight: 600; font-size: 17px; }
+  footer p { margin: 6px 0 0; }
+
+  @media (min-width: 720px) {
+    .hero { padding-top: 64px; }
+    .card { padding: 36px 40px; }
+    .steps { grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .steps li { grid-template-columns: 1fr; gap: 10px; }
+    .rooms { grid-template-columns: 1fr 1fr; }
+    .rooms .house { grid-column: 1 / -1; }
+  }
+</style>
+</head>
+<body>
+<div class="band" aria-hidden="true"></div>
+<main>
+  <header class="hero wrap">
+    <div class="brand">
+      <img src="img/icon-180.png" width="72" height="72" alt="Tumbletub app icon">
+      <span>Tumbletub</span>
+    </div>
+    <p class="kicker">A bath-toy physics puzzle for iPhone</p>
+    <h1>Plan the fizz. Wait for the plop.</h1>
+    <p class="pitch">Place numbered fizz balls on bath toys, press Fizz!, and let the foam push every toy into the water. Nothing moves until you are ready, so take as long as you like to plan.</p>
+    <p class="soon">Coming soon to the App Store</p>
+    <ul class="promises" aria-label="What you will not find">
+      <li>No ads</li>
+      <li>No lives or energy</li>
+      <li>No tracking</li>
+      <li>No account</li>
+    </ul>
+  </header>
+
+  <div class="shots wrap">
+    <figure>
+      <div class="phone"><img src="img/screen-home.png" width="390" height="844" alt="Tumbletub home screen: the Bathtub room with its 24-level grid, three more rooms and a Run the bath button"></div>
+      <figcaption>Four rooms, 24 levels each</figcaption>
+    </figure>
+    <figure>
+      <div class="phone"><img src="img/screen-kitchen-sink.png" width="390" height="844" alt="Kitchen Sink level 3-01: two sponges on teak shelves above a basin of water, with the Fizz! button below" loading="lazy"></div>
+      <figcaption>Kitchen Sink, level 3-01</figcaption>
+    </figure>
+  </div>
+
+  <section class="wrap" aria-labelledby="how">
+    <div class="card">
+      <h2 id="how">How it plays</h2>
+      <p class="lede">Each level is a still life of bath toys on teak shelves above the water. You get a few fizz balls and one plan.</p>
+      <ol class="steps">
+        <li>
+          <span class="ball" aria-hidden="true">1</span>
+          <div>
+            <h3>Place</h3>
+            <p>Tap a glowing ring on a bath toy to place a numbered fizz ball. Place one, or several.</p>
+          </div>
+        </li>
+        <li>
+          <span class="ball" aria-hidden="true">2</span>
+          <div>
+            <h3>Fizz!</h3>
+            <p>Press Fizz! The balls pop in number order, and the foam pushes everything nearby away from each ball.</p>
+          </div>
+        </li>
+        <li>
+          <span class="ball" aria-hidden="true">3</span>
+          <div>
+            <h3>Plop</h3>
+            <p>Get every toy into the water. Anything that lands on the floor loses the level, and a piece marked with a <span class="drop">crossed-out drop</span> must stay dry.</p>
+          </div>
+        </li>
+      </ol>
+      <p class="note">Start over is always free. Rewind (undo the last Fizz!) and Extra Fizz (one more ball) are earned by clearing levels 6, 12, 18 and 24 of a room for the first time.</p>
+    </div>
+  </section>
+
+  <section class="wrap" aria-labelledby="fair">
+    <div class="card">
+      <h2 id="fair">Fair by design</h2>
+      <p class="lede">You pay once for the rooms you want, and that is the whole deal.</p>
+      <ul class="fair">
+        <li><strong>No ads.</strong> Not between levels, not for rewards, not anywhere.</li>
+        <li><strong>No lives, no energy.</strong> Play as many levels as you like, whenever you like.</li>
+        <li><strong>No tracking, no account.</strong> Your progress stays on your iPhone.</li>
+        <li><strong>Helpers are earned, not sold.</strong> Rewind and Extra Fizz come from clearing levels.</li>
+      </ul>
+      <ul class="rooms" aria-label="Rooms and prices">
+        <li class="free"><span><span class="name">Bathtub</span><span class="levels">24 levels</span></span><span class="price">Free</span></li>
+        <li><span><span class="name">Laundry Room</span><span class="levels">24 levels</span></span><span class="price">$1.99</span></li>
+        <li><span><span class="name">Kitchen Sink</span><span class="levels">24 levels</span></span><span class="price">$1.99</span></li>
+        <li><span><span class="name">Garden Pool</span><span class="levels">24 levels</span></span><span class="price">$1.99</span></li>
+        <li class="house"><span><span class="name">Whole House</span><span class="levels">All three rooms, while you own no room yet</span></span><span class="price">$3.99</span></li>
+      </ul>
+      <p class="fine">One-time purchases, no subscriptions. Restore them any time from Settings or the Shop. The App Store shows prices in your own currency.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <nav aria-label="Legal and help">
+    <a href="privacy.html">Privacy</a>
+    <a href="support.html">Support</a>
+  </nav>
+  <p>&copy; 2026 Tumbletub. Coming soon to the App Store for iPhone.</p>
+  <p>Set in Fraunces and Jost, under the SIL Open Font License (<a href="fonts/fraunces_ofl.txt">Fraunces</a>, <a href="fonts/jost_ofl.txt">Jost</a>).</p>
+</footer>
+</body>
+</html>
