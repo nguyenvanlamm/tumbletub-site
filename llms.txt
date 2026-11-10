@@ -1,0 +1,22 @@
+# Tumbletub
+
+> Tumbletub is a calm physics puzzle game for iPhone (portrait), coming soon to the App Store. Rubber ducks, sponges and toy boats sit on teak shelves above the water: place numbered fizz balls on them, press Fizz!, and the foam pushes nearby toys away from each ball. Get every toy into the water to clear the level. No ads, no lives or energy, no tracking, no account.
+
+Key facts:
+
+- Platform: iPhone only, portrait. Not released yet: there is no App Store link, rating or download count yet.
+- Content: four rooms of 24 levels each (96 levels): Bathtub, Laundry Room, Kitchen Sink, Garden Pool.
+- Price: free to download; the Bathtub and its 24 levels are free. Laundry Room, Kitchen Sink and Garden Pool are one-time in-app purchases at $1.99 each (US prices), or Whole House (all three) at $3.99 while you own no room yet. No subscriptions, no consumables; Restore Purchases is in Settings and the Shop.
+- Helpers: Start over is always free. Rewind (undo the last Fizz!) and Extra Fizz (one more ball) are earned by clearing levels 6, 12, 18 and 24 of a room for the first time; they are never sold.
+- Privacy: no ads, no analytics, no tracking, no sign-in. Progress stays on the device and works offline.
+- Language: English.
+
+## Pages
+
+- [Tumbletub home](https://nguyenvanlamm.github.io/tumbletub-site/): how the game plays, what is fair about it, and the rooms and prices
+- [Support](https://nguyenvanlamm.github.io/tumbletub-site/support.html): contact, how to play, purchases and restoring them, how progress is saved
+- [Privacy Policy](https://nguyenvanlamm.github.io/tumbletub-site/privacy.html): what stays on the device and what the game never collects
+
+## Optional
+
+- [Full text of this site](https://nguyenvanlamm.github.io/tumbletub-site/llms-full.txt): all three pages as one Markdown file
