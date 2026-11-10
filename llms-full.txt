@@ -1,0 +1,101 @@
+# Tumbletub
+
+> A calm bath-toy physics puzzle for iPhone, coming soon to the App Store. Plan the fizz. Wait for the plop. This file holds the full text of https://nguyenvanlamm.github.io/tumbletub-site/ (home, support and privacy pages) as Markdown.
+
+## Home — Plan the fizz. Wait for the plop.
+
+Source: https://nguyenvanlamm.github.io/tumbletub-site/
+
+A bath-toy physics puzzle for iPhone. Place numbered fizz balls on bath toys, press Fizz!, and let the foam push every toy into the water. Nothing moves until you are ready, so take as long as you like to plan.
+
+Status: coming soon to the App Store. iPhone only. There is no App Store link yet.
+
+What you will not find: no ads, no lives or energy, no tracking, no account.
+
+Screenshots: the home screen (the Bathtub room with its 24-level grid, three more rooms and a Run the bath button), and Kitchen Sink level 3-01 (two sponges on teak shelves above a basin of water, with the Fizz! button below).
+
+### How it plays
+
+Each level is a still life of bath toys on teak shelves above the water. You get a few fizz balls and one plan.
+
+1. **Place.** Tap a glowing ring on a bath toy to place a numbered fizz ball. Place one, or several.
+2. **Fizz!** Press Fizz! The balls pop in number order, and the foam pushes everything nearby away from each ball.
+3. **Plop.** Get every toy into the water. Anything that lands on the floor loses the level, and a piece marked with a crossed-out drop must stay dry.
+
+Start over is always free. Rewind (undo the last Fizz!) and Extra Fizz (one more ball) are earned by clearing levels 6, 12, 18 and 24 of a room for the first time.
+
+### Fair by design
+
+You pay once for the rooms you want, and that is the whole deal.
+
+- **No ads.** Not between levels, not for rewards, not anywhere.
+- **No lives, no energy.** Play as many levels as you like, whenever you like.
+- **No tracking, no account.** Your progress stays on your iPhone.
+- **Helpers are earned, not sold.** Rewind and Extra Fizz come from clearing levels.
+
+Rooms and prices:
+
+| Room | Levels | Price |
+|---|---|---|
+| Bathtub | 24 | Free |
+| Laundry Room | 24 | $1.99 |
+| Kitchen Sink | 24 | $1.99 |
+| Garden Pool | 24 | $1.99 |
+| Whole House | all three rooms, while you own no room yet | $3.99 |
+
+One-time purchases, no subscriptions. Restore them any time from Settings or the Shop. The App Store shows prices in your own currency.
+
+## Support
+
+Source: https://nguyenvanlamm.github.io/tumbletub-site/support.html
+
+### Contact
+
+Write to lamnv260398@gmail.com. Please say which device you play on and, if it is about a level, its number.
+
+### How to play
+
+Tap a glowing ring on a bath toy to place a numbered fizz ball. Place one or more, then press Fizz! — the balls pop in number order, and the foam pushes everything nearby away from each ball. Get every toy into the water. Anything that lands on the floor loses the level, and a piece marked with a crossed-out drop must stay dry. Start over is always free. Rewind (undo the last Fizz!) and Extra Fizz (one more ball) are earned by clearing levels 6, 12, 18 and 24 of a room for the first time.
+
+### Purchases
+
+The Bathtub and its 24 levels are free. The Laundry Room, Kitchen Sink and Garden Pool rooms (24 levels each) are one-time purchases (non-consumable): $1.99 each, or the Whole House for $3.99 while you own no room yet. The App Store shows prices in your currency. Bought something before, or on another device with the same store account? Open Settings → Restore purchases or Shop → Restore purchases.
+
+### Progress
+
+Progress is saved on the device only. It is not synced between devices, and it is removed if you delete the app.
+
+## Privacy Policy
+
+Source: https://nguyenvanlamm.github.io/tumbletub-site/privacy.html
+
+Last updated November 10, 2026.
+
+Tumbletub is a puzzle game. It does not ask who you are, and it does not sell any data about you.
+
+### What stays on your device
+
+- Your progress: stars per level, the Rewind and Extra Fizz helpers in stock, and which store purchases were already delivered.
+- Your settings: the Sound switch.
+- Whether you have bought the Laundry Room, Kitchen Sink, Garden Pool or Whole House rooms.
+
+This is stored on your device only. Deleting the app removes it.
+
+### What we do not do
+
+- No account or sign-in.
+- No advertising and no ad networks.
+- No analytics, crash reporting or tracking of any kind.
+- No access to your contacts, photos, location, camera or microphone.
+
+### Purchases
+
+The Bathtub and its 24 levels are free. Purchases are handled entirely by the App Store under its own privacy policy. We receive no payment details; the game only learns from the store which purchases exist.
+
+### Children
+
+The game collects no personal information from anyone, including children.
+
+### Changes
+
+If this policy changes, the new version will be posted on this page with a new date.
